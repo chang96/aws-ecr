@@ -1,6 +1,6 @@
 FROM ubuntu
-RUN apt-get update -y && \
-    apt-get install -y python-pip python-dev
+RUN apk update -y && \
+    apk -y python-pip python-dev
 
 COPY ./requirements.txt /app/requirements.txt
 
@@ -13,3 +13,5 @@ COPY . /app
 ENTRYPOINT ["python"]
 
 CMD ["app.py"]
+
+https://github.com/chang96/aws-ecr.git
