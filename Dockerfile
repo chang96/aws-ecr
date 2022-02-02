@@ -14,4 +14,3 @@ ENTRYPOINT ["python"]
 
 CMD ["app.py"]
 
-https://github.com/chang96/aws-ecr.git
